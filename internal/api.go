@@ -9,7 +9,6 @@ import (
 
 // Convert opens a shapefile and converts it to an svg
 func Convert(shapefileName string) error {
-	fmt.Println("Shapefile Name:", shapefileName)
 	shape, err := shp.Open(shapefileName)
 	if err != nil {
 		return err

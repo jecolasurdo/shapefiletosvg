@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"io/ioutil"
 
 	"github.com/BurntSushi/toml"
@@ -18,7 +17,6 @@ type Configuration struct {
 func GetConfiguration() (config *Configuration, err error) {
 	var b []byte
 	if b, err = ioutil.ReadFile(tomlLocation); err == nil {
-		fmt.Println("toml:", string(b))
 		_, err = toml.Decode(string(b), &config)
 	}
 	return
