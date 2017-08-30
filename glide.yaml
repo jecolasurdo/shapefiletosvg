@@ -1,3 +1,6 @@
 package: github.com/jecolasurdo/shapefiletosvg
 import:
 - package: github.com/ajstarks/svgo
+- package: github.com/jonas-p/go-shp
+- package: github.com/BurntSushi/toml
+  version: ^0.3.0
